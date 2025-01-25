@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional home appliance repair services in Vizag. Specializing in washing machine repair, refrigerator maintenance, and air conditioner installation. Contact us today!">
-    <meta name="keywords" content="washing machine repair Vizag, refrigerator maintenance Vizag, air conditioner installation Vizag, Vizag appliance repair">
+    <meta name="description" content="SR Tecno Service offers professional home appliance repair and maintenance services in Vizag. We specialize in washing machine repair, refrigerator maintenance, and air conditioner installation.">
+    <meta name="keywords" content="LG washing machine service center in Vizag, Samsung washing machine service center in Vizag, IFB washing machine service center in Vizag, nearby washing machine service center, Vizag washing machine repair">
     <meta name="author" content="SR Tecno Service">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://washingmachinerepairinvizag.online/">
-    <title>Washing Machine Repair in Vizag | SR Tecno Service</title>
-
-    <link rel="stylesheet" href="style.css?v=2">
+    <title>SR Tecno Service - Home Appliance Repair Services</title>
+    <link rel="stylesheet" href="style.css?v=1">
     <link rel="icon" href="images/favicon.png">
-    
+
     <!-- Swiper.js CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -22,7 +20,7 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "SR Tecno Service",
-      "image": "https://washingmachinerepairinvizag.online/images/logo.png",
+      "image": "https://example.com/path-to-logo.png",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Kala Nagar, Krishna Nagar, Madhurawada",
@@ -31,16 +29,10 @@
         "postalCode": "530048",
         "addressCountry": "IN"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "17.751947",
-        "longitude": "83.345543"
-      },
       "telephone": "+91 9550310022",
       "email": "support@srtecnoservice.com",
-      "url": "https://washingmachinerepairinvizag.online/",
-      "description": "Professional home appliance repair and maintenance services in Vizag.",
-      "openingHours": "Mo-Sa 09:00-18:00"
+      "url": "https://srtecnoservice.com",
+      "description": "Professional home appliance repair and maintenance services in Vizag."
     }
     </script>
 
@@ -52,110 +44,169 @@
             padding: 0;
         }
 
-        h1, h2, h3 {
-            margin-bottom: 15px;
+        h2 {
+            text-align: left;
+            margin: 20px 0;
+            padding-left: 20px;
         }
 
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Floating Buttons */
-        .floating-buttons {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .floating-buttons a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            color: white;
-            font-size: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-
-        .floating-buttons .whatsapp-button {
-            background-color: #25d366;
-        }
-
-        .floating-buttons .call-button {
-            background-color: #007bff;
-        }
-
-        .floating-buttons .email-button {
-            background-color: #ff5722;
-        }
-
-        /* Section Styles */
         section {
             padding: 40px 20px;
         }
+    
 
-        section h2 {
-            font-size: 24px;
-            border-bottom: 2px solid #ddd;
-            padding-bottom: 10px;
+        /* Services Section */
+        .services-section {
+            background-color: #f9f9f9;
         }
 
-        .services-wrapper {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
+        /* Swiper Container */
+        .swiper-container {
+            width: 100%;
+            padding: 20px 0;
         }
 
-        .service-item {
-            background: #fff;
+        .swiper-wrapper {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            text-align: left;
+            background: white;
             border: 1px solid #ddd;
             border-radius: 8px;
             padding: 20px;
+            margin-right: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
         }
 
-        .service-item img {
-            max-width: 100%;
-            border-radius: 8px;
+        .swiper-slide img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin-bottom: 15px;
         }
 
-        footer {
+        .swiper-slide h3 {
+            margin: 0 0 10px;
+            font-size: 18px;
+        }
+
+        .swiper-slide p {
+            margin: 0;
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Navigation Buttons */
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #333;
+        }
+
+        .swiper-pagination-bullet {
             background: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
         }
+
+        .swiper-pagination-bullet-active {
+            background: #007bff;
+        }
+        /* Floating Buttons */
+       /* Floating Buttons Container */
+.floating-buttons {
+    position: fixed; /* Ensures the buttons are always in the viewport */
+    bottom: 20px; /* Positions the buttons near the bottom */
+    right: 20px; /* Positions the buttons near the right edge */
+    display: flex;
+    flex-direction: column; /* Stacks the buttons vertically */
+    gap: 10px; /* Adds space between the buttons */
+    z-index: 1000; /* Ensures the buttons are above other elements */
+}
+
+/* Floating Buttons Styles */
+.floating-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px; /* Button width */
+    height: 60px; /* Button height */
+    border-radius: 50%; /* Circular shape */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 16px; /* Font size */
+    font-weight: bold; /* Bold font */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+/* Individual Button Colors */
+.floating-buttons a.whatsapp-button {
+    background-color: #25d366; /* WhatsApp Green */
+}
+
+.floating-buttons a.call-button {
+    background-color: #007bff; /* Call Button Blue */
+}
+
+.floating-buttons a.email-button {
+    background-color: #ff5722; /* Email Button Orange */
+}
+
+/* Hover Effect */
+.floating-buttons a:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Prevent Horizontal Scrolling Issue */
+body, html {
+    overflow-x: hidden; /* Prevent horizontal scrolling caused by floating elements */
+}
+
+
     </style>
+    <div class="floating-buttons">
+        <!-- WhatsApp Button -->
+        <a href="https://wa.me/919441889350" class="whatsapp-button" target="_blank" title="WhatsApp Us">
+            WhatsApp
+        </a>
+        <!-- Call Button -->
+        <a href="tel:+919441889350" class="call-button" title="Call Us">
+            Call
+        </a>
+        <!-- Email Button -->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScVk9hvizjBkZ5LaA24cymBGvzfBSM8h99gjBZNQi4X0cLH4A/viewform?usp=header" 
+           class="email-button" target="_blank" title="Email Us">
+            Email
+        </a>
+    </div>
+    
+
 </head>
 <body>
     <header class="main-header">
-        <img src="images/header.jpg" alt="SR Tecno Service - Reliable Appliance Repair">
-        <h1>SR Tecno Service</h1>
-        <p>Reliable Repair & Maintenance Services for Your Home Appliances</p>
-        <a href="#contact" class="btn primary-btn">Contact Us Now</a>
+        <div class="overlay">
+            <img src="images/hellotwo.png" alt="visiting">
+            <h1>SR TECNO SERVICE</h1>
+            <p>Reliable Repair & Maintenance Services for Your Home Appliances</p>
+            <a href="#contact" class="btn primary-btn">Contact Us Now</a>
+        </div>
     </header>
+    
 
     <nav class="main-nav">
-        <ul>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#faq">FAQs</a></li>
-            <li><a href="#contact">Contact</a></li>
+        <ul class="nav-buttons">
+            <li><a href="#services" class="nav-btn">Services</a></li>
+            <li><a href="#about" class="nav-btn">About Us</a></li>
+            <li><a href="#testimonials" class="nav-btn">Testimonials</a></li>
+            <li><a href="#faq" class="nav-btn">FAQs</a></li>
+            <li><a href="#contact" class="nav-btn">Contact</a></li>
         </ul>
     </nav>
+
 
     <section id="services">
         <h2>Our Services</h2>
@@ -175,13 +226,70 @@
                 <h3>Air Conditioner Installation</h3>
                 <p>Professional installation services for all types of air conditioners.</p>
             </div>
+            <div class="service-item">
+                <img src="images/microone.jpg" alt="Microwave Repair">
+                <h3>Microwave Repair</h3>
+                <p>Professional services for all types of Microwave.</p>
+            </div>
+            <div class="service-item">
+                <img src="images/two.jpg" alt="Regular Maintenance">
+                <h3>Regular Maintenance</h3>
+                <p>Keep your appliances in top shape with our scheduled maintenance plans.</p>
+            </div>
         </div>
+    </section>
+    
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At SR Tecno Service, we provide reliable home appliance repair and maintenance services in Vizag.</p>
+    </section>
+    <section id="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonials-container">
+            <div class="testimonial-item">
+                <p>"SR TECNO SERVICE fixed my washing machine in no time. Excellent service and friendly staff!"</p>
+                <span>- Priya Sharma</span>
+            </div>
+            <div class="testimonial-item">
+                <p>"Highly recommend their maintenance services. My appliances work like new!"</p>
+                <span>- Rahul Verma</span>
+            </div>
+            <div class="testimonial-item">
+                <p>"Great service! The team is professional and reliable."</p>
+                <span>- Anjali Gupta</span>
+            </div>
+            <div class="testimonial-item">
+                <p>"Very professional and knowledgeable team. My refrigerator is working perfectly now!"</p>
+                <span>- Prashant</span>
+            </div>
+            <div class="testimonial-item">
+                <p>"The team was very courteous and efficient. My microwave was fixed in no time!"</p>
+                <span>- Manoj Kumar</span>
+            </div>
+        </div>
+    
+    </section>
+
+    
+    <section id="faq">
+        <h2>FAQs</h2>
+        <div class="faq-item">
+            <h3>What types of appliances do you repair?</h3>
+            <p>We specialize in washing machines, refrigerators, and air conditioners.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How can I book a service?</h3>
+            <p>You can call us directly or use the WhatsApp button or use the Email button at the bottom of the page.</p>
+        </div>
+
     </section>
 
     <section id="contact">
         <h2>Contact Us</h2>
-        <p><strong>Phone:</strong> <a href="tel:+919441889350">+91 9441889350</a></p>
-        <p><strong>Email:</strong> <a href="mailto:support@srtecnoservice.com">support@srtecnoservice.com</a></p>
+        <p><strong>Phone:</strong> <a href="tel:+919441889350">+91 9441889350 </a></p>
+        <p><strong>Phone 1:</strong> <a href="tel:+917730083215">+91 7730083215</a></p>
+        <p><strong>Email:</strong> <a href="mailto:srtecnoservice9@gmail.com">srtecnoservice9@gmail.com</a></p>
         <p><strong>Address:</strong> Kala Nagar, Krishna Nagar, Madhurawada, Visakhapatnam</p>
     </section>
 
@@ -189,13 +297,14 @@
         <p>&copy; 2025 SR Tecno Service. All rights reserved.</p>
     </footer>
 
+
     <!-- Swiper.js Script -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper-container', {
             loop: true,
             autoplay: {
-                delay: 3000,
+                delay: 2000,
                 disableOnInteraction: false,
             },
             navigation: {
@@ -204,6 +313,14 @@
             },
             slidesPerView: 3,
             spaceBetween: 20,
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                480: {
+                    slidesPerView: 1,
+                },
+            },
         });
     </script>
 </body>
